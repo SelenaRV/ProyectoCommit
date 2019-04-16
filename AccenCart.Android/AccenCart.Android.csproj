@@ -173,5 +173,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Offer1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Cv_Selena_inf2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
