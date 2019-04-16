@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:ct="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView" 
+             xmlns:ffimageloading = "clr-namespace: FFImageLoading.Forms; assembly = FFImageLoading.Forms"
+            
+             x:Class="AccenCart.Views.OffersPage"
+            
+              
+             Title="{Binding Title}">
+
+    <!--<ContentPage.Content>
+        <StackLayout >
+            <Label Text="Saludos selena"></Label>
+        </StackLayout>
+    </ContentPage.Content>-->
+    
+            <cv:CarouselViewControl 
+        ItemsSource="{Binding MyItemsSource}"
+        ShowArrows="true"
+        ShowIndicators="true"
+        PositionSelectedCommand="{Binding MyCommand}"
+        PositionSelected="Handle_PositionSelected"
+        Scrolled="Handle_Scrolled"
+        Orientation="Horizontal">
+            </cv:CarouselViewControl>
+      
+    <!--<ContentView HorizontalOptions = "FillAndExpand" VerticalOptions = "FillAndExpand">
+        <ct:CarouselView ItemsSource = "{Binding MyItemsSource}">
+            <ct:CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding Key}"></Image>
+                </DataTemplate>
+                </ct:CarouselView.ItemTemplate>
+            </ct:CarouselView>
+    </ContentView>-->
+
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AccenCart.Views.MainPage"
+             Title="{Binding Title}"
+             Navigation="{Binding Navigation}">
+    <ContentPage.Content>
+       
+        <ScrollView Margin="10"  >
+
+            <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="Orange" Padding="0,30,0,0" >
+                  
+                <Grid >
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+ 
+
+                    <ImageButton Command="{Binding ProductTappedCommand}" Source="icon_ShoppingList.png" BackgroundColor="Orange" HeightRequest="100" WidthRequest="200" Grid.Row="0" Grid.Column="0" Aspect="AspectFit" HorizontalOptions="CenterAndExpand"/>
+                    <ImageButton Command="{Binding OfferTappedCommand}" Source="icon_Offers.png" BackgroundColor="Orange" HeightRequest="100" WidthRequest="200" Grid.Row="0" Grid.Column="12" Aspect="AspectFit" HorizontalOptions="CenterAndExpand"/>
+                    <ImageButton Command="{Binding MapTappedCommand}" Source="icon_Map.png" BackgroundColor="Orange" HeightRequest="100" WidthRequest="200" Grid.Row="3" Grid.Column="0" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" />
+                    <ImageButton Command="{Binding SupportTappedCommand}" Source="icon_Contact.png" BackgroundColor="Orange" HeightRequest="100"  WidthRequest="200" Grid.Row="3" Grid.Column="12" Aspect="AspectFit" HorizontalOptions="CenterAndExpand"/>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
