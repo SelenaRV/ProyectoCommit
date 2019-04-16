@@ -27,7 +27,8 @@ namespace AccenCart.ViewModels
             {
                 new CachedImage() { Source = "Offer1.jpg", DownsampleToViewSize = true, Aspect = Aspect.Fill },
                 new CachedImage() { Source = "Offer2.jpg", DownsampleToViewSize = true, Aspect = Aspect.Fill },
-                new CachedImage() { Source = "Offer3.jpg", DownsampleToViewSize = true, Aspect = Aspect.Fill }
+                new CachedImage() { Source = "Offer3.jpg", DownsampleToViewSize = true, Aspect = Aspect.Fill },
+                new CachedImage() { Source = "CV_Selena_inf2.jpg", DownsampleToViewSize = true, Aspect = Aspect.Fill }
             };
             MyCommand = new Command(() =>
             {
